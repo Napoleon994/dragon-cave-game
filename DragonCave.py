@@ -8,10 +8,19 @@ def displayIntro():
 	print('is greedy and hungry, and will eat you on sight.')
 	print()
 
+def chooseCave():
+	cave = ''
+	while cave != '1' and cave != '2':
+		print('Which cave will you go into? (1 or 2)')
+		cave = input()
+	return cave
+
 playAgain = 'yes'
 
 while playAgain == 'yes' or playAgain == 'y':
 	displayIntro()
-	caveNumber
+	
+	caveNumber = chooseCave()
+	
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
